@@ -1,0 +1,150 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% General portfolio CV - not tailored to a specific offer. See changes.md.
+\documentclass[11pt,a4paper]{awesome-cv}
+\hyphenpenalty=10000
+\exhyphenpenalty=10000
+\emergencystretch=2em
+\geometry{left=1.4cm,top=.5cm,right=1.4cm,bottom=.5cm,footskip=.5cm}
+\fontdir[fonts/]
+\colorlet{awesome}{awesome-red}
+\setbool{acvSectionColorHighlight}{true}
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+\name{Marek}{Kleszcz}
+\address{Katowice, Poland}
+\linkedin{marek-kleszcz}
+\email{contact@mkleszcz.pl}
+\github{kleszczuch}
+\photo[rectangle,edge,right]{profile.jpg}
+\renewcommand{\acvSectionTopSkip}{2mm}
+\renewcommand{\acvSectionContentTopSkip}{1.6mm}
+\renewcommand{\acvHeaderAfterSocialSkip}{2mm}
+\hypersetup{pdfauthor={Marek Kleszcz},pdftitle={Marek Kleszcz - CV}}
+\renewenvironment{cvparagraph}{%
+  \vspace{\acvSectionContentTopSkip}\vspace{-1mm}
+  \paragraphstyle
+}{\par\vspace{2mm}}
+\renewenvironment{cvskills}{%
+  \vspace{\acvSectionContentTopSkip}\vspace{-2mm}
+  \setlength{\topsep}{0pt}
+  \begin{center}
+  \setlength\tabcolsep{1ex}
+  \setlength{\extrarowheight}{1pt}
+  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} R{3.3cm} L{\textwidth - 3.3cm - 4ex}}
+}{\end{tabular*}\end{center}}
+
+\begin{document}
+\setlength{\parskip}{2pt}
+\makecvheader[C]
+
+\cvsection{Profile}
+
+\begin{cvparagraph}
+Computer Science graduate and master's student in Cybersecurity. Over two years of manual QA experience at Sperasoft and at least one year of commercial web development for Gwiazdy Katowice DESW (Next.js website, React/Supabase member portal in development). Personal projects in Python computer vision and cross-platform Flutter apps. I work daily with AI coding agents and local LLMs.
+\end{cvparagraph}
+
+\cvsection{Skills}
+
+\begin{cvskills}
+  \cvskill{Web}{React, TypeScript, JavaScript, Next.js, Vite, Tailwind CSS, REST APIs}
+  \cvskill{Backend and data}{SQL, PostgreSQL, Supabase (Auth, RLS/RPC, Edge Functions), Firebase, Cloud Firestore}
+  \cvskill{Languages}{Python, Dart/Flutter, C\#/.NET, Java}
+  \cvskill{AI and ML}{PyTorch, OpenCV, MediaPipe, pandas, NumPy, Hugging Face; local LLMs and fine-tuning, AI coding agents}
+  \cvskill{Tools and DevOps}{Git, Docker, GitHub Actions (CI/CD), Cloudflare, Linux, Windows}
+  \cvskill{Quality and security}{Functional and regression testing, defect analysis, penetration testing, Jira, JQL}
+\end{cvskills}
+
+\cvsection{Experience}
+
+\begin{cvparagraph}
+\noindent\begin{minipage}[t]{\dimexpr\linewidth-4.8cm\relax}\vspace{0pt}
+\textbf{Sperasoft} - Software Tester. Defect analysis and documentation; investigation of their causes through logical reasoning and analysis of application behaviour.
+\end{minipage}\hfill
+\begin{minipage}[t]{4.5cm}\vspace{0pt}
+\raggedleft\entrylocationstyle{Katowice}\\
+\entrydatestyle{June 2024 - September 2026}
+\end{minipage}
+\begin{itemize}[leftmargin=2ex,nosep,topsep=1mm,label=\textbullet]
+  \item Functional and regression testing of AAA games, fix verification, defect reporting and tracking in Jira.
+  \item Penetration testing; technical communication between QA, developers and project management.
+\end{itemize}
+\vspace{1mm}
+\noindent\begin{minipage}[t]{\dimexpr\linewidth-4.8cm\relax}\vspace{0pt}
+\textbf{Gwiazdy Katowice DESW} - Association President. Website and software development for the association; coordination of club activities, instructor work and communication with external organisations.
+\end{minipage}\hfill
+\begin{minipage}[t]{4.5cm}\vspace{0pt}
+\raggedleft\entrylocationstyle{Katowice}\\
+\entrydatestyle{2025 - present}
+\end{minipage}
+\begin{itemize}[leftmargin=2ex,nosep,topsep=1mm,label=\textbullet]
+  \item Development of the club website and member application (React, Supabase).
+  \item Annual training planning, taking travel, instructor availability and club needs into account.
+  \item Organisation of a fencing event under the patronage of TAURON Park Śląski, with participants from across Poland.
+\end{itemize}
+\end{cvparagraph}
+
+\cvsection{Projects}
+
+\begin{cventries}
+  \cventry
+    {Next.js, React, TypeScript, Vite, Supabase, PostgreSQL; source code not public}
+    {Gwiazdy Katowice - website and member portal}
+    {\href{https://www.gwiazdykatowice.pl/pl}{\fontsize{8pt}{1em}\selectfont gwiazdykatowice.pl}}
+    {}
+    {\begin{cvitems}
+      \item {Polish/English website built with Next.js, React, TypeScript and Tailwind CSS.}
+      \item {Asynchronous contact form and server-side REST integrations with Discord and Supabase.}
+      \item {Member portal with Google sign-in, PostgreSQL RLS/RPC and TypeScript Edge Functions; in development.}
+    \end{cvitems}}
+  \vspace{6mm}
+  \cventry
+    {Dart, Flutter, Firebase Auth, Cloud Firestore, Provider}
+    {HemaRef - HEMA tournament application}
+    {\href{https://github.com/kleszczuch/HemaRef}{\fontsize{8pt}{1em}\selectfont github.com/kleszczuch/HemaRef}}
+    {}
+    {\begin{cvitems}
+      \item {Cross-platform app built as a bachelor's thesis: match scoring, cards and penalties, timer, undo.}
+      \item {Knockout bracket generation for any number of participants, byes and a third-place match.}
+      \item {Google sign-in through Firebase Auth; tournament data stored in Cloud Firestore.}
+    \end{cvitems}}
+  \vspace{6mm}
+  \cventry
+    {Python, OpenCV, MediaPipe Hands, PyTorch}
+    {MouseNoNeed - gesture-controlled mouse}
+    {\href{https://github.com/kleszczuch/MouseNoNeed}{\fontsize{8pt}{1em}\selectfont github.com/kleszczuch/MouseNoNeed}}
+    {}
+    {\begin{cvitems}
+      \item {Desktop app controlling the mouse and keyboard with hand gestures tracked in real time from a webcam.}
+      \item {GUI for mapping gestures to cursor movement, clicks, scrolling and keyboard shortcuts.}
+    \end{cvitems}}
+\end{cventries}
+
+\vspace{6mm}
+\cvsection{Education}
+
+\begin{cventries}
+  \cventry
+    {Master's studies in Computer Science - Cybersecurity}
+    {WSB University in Katowice}
+    {Katowice}
+    {October 2026 - present}
+    {Studies in progress.}
+  \vspace{2mm}
+  \cventry
+    {Bachelor's degree in Computer Science}
+    {University of Economics in Katowice}
+    {Katowice}
+    {2023 - 2026}
+    {Specialisation: Algorithms and Programming. Thesis: HEMA tournament application built with Flutter and Firebase.}
+\end{cventries}
+
+\cvsection{Languages}
+
+\begin{cvparagraph}
+\textbf{Polish} - native \qquad \textbf{English} - C1 \qquad \textbf{German} - B1/B2 \qquad \textbf{Italian} - A1/A2
+\end{cvparagraph}
+
+\vspace{2mm}
+{\fontsize{8pt}{9pt}\selectfont\color{graytext}
+\noindent I consent to the processing of the personal data contained in my CV for the purposes of the recruitment process I am applying for.\par}
+\end{document}

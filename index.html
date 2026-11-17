@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Marek Kleszcz — Portfolio</title>
+  <meta name="description" content="Marek Kleszcz — portfolio: CV, projekty, kontakt.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%23e5484d'/><text x='16' y='22' font-family='Arial' font-weight='700' font-size='15' text-anchor='middle' fill='white'>MK</text></svg>">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#o-mnie">Marek <b>Kleszcz</b></a>
+    <nav class="tabs" aria-label="Sekcje">
+      <a href="#o-mnie" data-tab="o-mnie">O mnie</a>
+      <a href="#projekty" data-tab="projekty">Projekty</a>
+      <a href="#kontakt" data-tab="kontakt">Kontakt</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ============ O MNIE ============ -->
+    <section id="o-mnie" class="panel">
+      <div class="hero">
+        <img class="avatar" src="assets/profile.jpg" alt="Marek Kleszcz" width="140" height="140">
+        <div>
+          <p class="eyebrow">Katowice · Junior Developer / QA / Cybersecurity</p>
+          <h1>Cześć, jestem Marek.</h1>
+          <p class="lead">
+            Absolwent informatyki, obecnie na magisterce z cyberbezpieczeństwa.
+            Ponad dwa lata w QA w Sperasoft, rok komercyjnego programowania stron i aplikacji
+            w React/Next.js + Supabase. Po godzinach computer vision w Pythonie i aplikacje we Flutterze.
+          </p>
+          <div class="actions">
+            <a class="btn primary" href="assets/Marek_Kleszcz_CV.pdf" download>Pobierz CV (PDF)</a>
+            <a class="btn" href="#projekty">Zobacz projekty</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="cv">
+        <article class="card">
+          <h2>Doświadczenie</h2>
+          <div class="entry">
+            <div class="entry-head"><h3>Sperasoft — Tester oprogramowania</h3><span>06.2024 – 09.2026 · Katowice</span></div>
+            <p>Analiza i dokumentacja defektów; szukanie ich przyczyn przez logiczne myślenie i analizę zachowania aplikacji.</p>
+            <ul>
+              <li>Testy funkcjonalne i regresyjne gier AAA, weryfikacja poprawek, zgłoszenia w Jira.</li>
+              <li>Testy penetracyjne.</li>
+              <li>Komunikacja techniczna między QA, deweloperami i kierownictwem projektu.</li>
+            </ul>
+          </div>
+          <div class="entry">
+            <div class="entry-head"><h3>Gwiazdy Katowice DESW — Prezes stowarzyszenia</h3><span>2025 – obecnie · Katowice</span></div>
+            <p>Tworzenie strony i oprogramowania dla stowarzyszenia; koordynacja działalności klubu, pracy instruktorów i kontaktów z instytucjami.</p>
+            <ul>
+              <li>Strona klubu i aplikacja dla członków (React, Supabase).</li>
+              <li>Roczne planowanie treningów z uwzględnieniem wyjazdów i możliwości kadrowych.</li>
+              <li>Organizacja wydarzenia szermierczego pod patronatem TAURON Parku Śląskiego, z uczestnikami z całej Polski.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="card">
+          <h2>Umiejętności</h2>
+          <dl class="skills">
+            <dt>Web</dt><dd>React, TypeScript, JavaScript, Next.js, Vite, Tailwind CSS, REST API</dd>
+            <dt>Backend i dane</dt><dd>SQL, PostgreSQL, Supabase (Auth, RLS/RPC, Edge Functions), Firebase, Firestore</dd>
+            <dt>Języki</dt><dd>Python, Dart/Flutter, C#/.NET, Java</dd>
+            <dt>AI i ML</dt><dd>PyTorch, OpenCV, MediaPipe, pandas, NumPy, Hugging Face, lokalne LLM i fine-tuning, agenci AI</dd>
+            <dt>Narzędzia</dt><dd>Git, Docker, GitHub Actions, Cloudflare, Linux, Windows</dd>
+            <dt>Jakość i security</dt><dd>Testy funkcjonalne i regresyjne, analiza defektów, testy penetracyjne, Jira, JQL</dd>
+          </dl>
+        </article>
+
+        <article class="card">
+          <h2>Wykształcenie</h2>
+          <div class="entry">
+            <div class="entry-head"><h3>Uniwersytet WSB w Katowicach</h3><span>10.2026 – obecnie</span></div>
+            <p>Studia magisterskie: informatyka, specjalizacja cyberbezpieczeństwo (w trakcie).</p>
+          </div>
+          <div class="entry">
+            <div class="entry-head"><h3>Uniwersytet Ekonomiczny w Katowicach</h3><span>2023 – 2026</span></div>
+            <p>Licencjat z informatyki, specjalizacja Algorytmy i programowanie. Praca: aplikacja sędziowska HEMA (Flutter + Firebase).</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <h2>Języki</h2>
+          <ul class="chips">
+            <li>Polski <small>ojczysty</small></li>
+            <li>Angielski <small>C1</small></li>
+            <li>Niemiecki <small>B1/B2</small></li>
+            <li>Włoski <small>A1/A2</small></li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ PROJEKTY ============ -->
+    <section id="projekty" class="panel" hidden>
+      <h1>Projekty</h1>
+      <p class="lead">Wybrane rzeczy, które zbudowałem. Projekty z dopiskiem „interaktywne demo” uruchomisz od razu w przeglądarce.</p>
+
+      <div class="grid">
+        <article class="card project featured">
+          <span class="badge">Interaktywne demo</span>
+          <h3>Aplikacja do zarządzania klubem</h3>
+          <p>Portal dla członków i trenerów klubu Gwiazdy Katowice: kalendarz treningów i zapisy, składki, sprzęt, sekcje, role i panel trenera. Demo działa w całości w przeglądarce na fikcyjnych danych, a logowanie jest symulowane — wystarczy kliknąć. Produkcyjnie: Supabase (Auth, PostgreSQL RLS/RPC, Edge Functions); w trakcie rozwoju.</p>
+          <ul class="tags"><li>React</li><li>TypeScript</li><li>Vite</li><li>Supabase</li><li>PostgreSQL</li></ul>
+          <div class="project-links">
+            <a class="btn primary" href="https://kleszczuch.github.io/GwiazdyKatowice-demo/" target="_blank" rel="noopener">Uruchom demo ↗</a>
+            <a class="link" href="https://github.com/kleszczuch/GwiazdyKatowice-demo" target="_blank" rel="noopener">Kod demo ↗</a>
+          </div>
+        </article>
+
+        <article class="card project">
+          <h3>Strona klubu Gwiazdy Katowice</h3>
+          <p>Dwujęzyczna (PL/EN) strona stowarzyszenia z formularzem kontaktowym i integracjami REST po stronie serwera (Discord, Supabase).</p>
+          <ul class="tags"><li>Next.js</li><li>React</li><li>TypeScript</li><li>Tailwind CSS</li></ul>
+          <a class="link" href="https://www.gwiazdykatowice.pl/pl" target="_blank" rel="noopener">gwiazdykatowice.pl ↗</a>
+        </article>
+
+        <article class="card project">
+          <h3>HemaRef — aplikacja turniejowa HEMA</h3>
+          <p>Wieloplatformowa aplikacja (praca licencjacka): drabinka pucharowa dla dowolnej liczby zawodników, punktacja walk, kartki, timer, cofanie akcji, logowanie Google.</p>
+          <ul class="tags"><li>Flutter</li><li>Dart</li><li>Firebase</li><li>Firestore</li></ul>
+          <a class="link" href="https://github.com/kleszczuch/HemaRef" target="_blank" rel="noopener">GitHub ↗</a>
+        </article>
+
+        <article class="card project">
+          <h3>MouseNoNeed — sterowanie gestami</h3>
+          <p>Aplikacja desktopowa sterująca myszą i klawiaturą gestami dłoni śledzonymi z kamery w czasie rzeczywistym, z GUI do mapowania gestów na akcje.</p>
+          <ul class="tags"><li>Python</li><li>OpenCV</li><li>MediaPipe</li><li>PyTorch</li></ul>
+          <a class="link" href="https://github.com/kleszczuch/MouseNoNeed" target="_blank" rel="noopener">GitHub ↗</a>
+        </article>
+
+        <article class="card project soon">
+          <h3>Kolejne dema</h3>
+          <p>Wkrótce — więcej projektów do uruchomienia w przeglądarce.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ KONTAKT ============ -->
+    <section id="kontakt" class="panel" hidden>
+      <h1>Kontakt</h1>
+      <p class="lead">Szukam pracy w IT — chętnie porozmawiam.</p>
+      <div class="contact">
+        <a class="card contact-item" href="mailto:contact@mkleszcz.pl">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zm9 7.2L4 7.1V17h16V7.1l-8 5.1zM4.6 7l7.4 4.7L19.4 7H4.6z"/></svg>
+          <span><b>E-mail</b>contact@mkleszcz.pl</span>
+        </a>
+        <a class="card contact-item" href="https://www.linkedin.com/in/marek-kleszcz/" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.5h4V21H3V9.5zm6.5 0h3.8v1.6h.1c.5-1 1.8-2 3.8-2 4 0 4.8 2.6 4.8 6V21h-4v-5.1c0-1.2 0-2.8-1.7-2.8s-2 1.3-2 2.7V21h-4V9.5z"/></svg>
+          <span><b>LinkedIn</b>marek-kleszcz</span>
+        </a>
+        <a class="card contact-item" href="https://github.com/kleszczuch" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.2 19.5c.5.1.7-.2.7-.5v-1.7c-2.8.6-3.4-1.3-3.4-1.3-.4-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.3 1.1 2.9.8.1-.6.3-1.1.6-1.3-2.2-.3-4.6-1.1-4.6-5 0-1.1.4-2 1-2.7-.1-.3-.4-1.3.1-2.7 0 0 .8-.3 2.8 1a9.6 9.6 0 0 1 5 0c1.9-1.3 2.8-1 2.8-1 .5 1.4.2 2.4.1 2.7.6.7 1 1.6 1 2.7 0 3.9-2.3 4.7-4.6 5 .4.3.7.9.7 1.9V21c0 .3.2.6.7.5A10 10 0 0 0 12 2z"/></svg>
+          <span><b>GitHub</b>kleszczuch</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer>© <span id="year"></span> Marek Kleszcz</footer>
+  <script src="main.js"></script>
+</body>
+</html>
