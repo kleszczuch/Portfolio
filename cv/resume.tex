@@ -1,6 +1,6 @@
 %!TEX TS-program = xelatex
 %!TEX encoding = UTF-8 Unicode
-% General portfolio CV - not tailored to a specific offer. See changes.md.
+% Ogolne CV do portfolio - IT / programowanie / audyt / QA. Bez dopasowania do konkretnej oferty. Zob. changes.md.
 \documentclass[11pt,a4paper]{awesome-cv}
 \hyphenpenalty=10000
 \exhyphenpenalty=10000
@@ -11,12 +11,13 @@
 \setbool{acvSectionColorHighlight}{true}
 \renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
 \name{Marek}{Kleszcz}
-\address{Katowice, Poland}
-\linkedin{marek-kleszcz}
+\address{Katowice, Polska}
 \email{contact@mkleszcz.pl}
+\homepage{mkleszcz.pl}
+\linkedin{marek-kleszcz}
 \github{kleszczuch}
 \photo[rectangle,edge,right]{profile.jpg}
-\renewcommand{\acvSectionTopSkip}{2mm}
+\renewcommand{\acvSectionTopSkip}{1.6mm}
 \renewcommand{\acvSectionContentTopSkip}{1.6mm}
 \renewcommand{\acvHeaderAfterSocialSkip}{2mm}
 \hypersetup{pdfauthor={Marek Kleszcz},pdftitle={Marek Kleszcz - CV}}
@@ -30,121 +31,117 @@
   \begin{center}
   \setlength\tabcolsep{1ex}
   \setlength{\extrarowheight}{1pt}
-  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} R{3.3cm} L{\textwidth - 3.3cm - 4ex}}
+  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} R{3.6cm} L{\textwidth - 3.6cm - 4ex}}
 }{\end{tabular*}\end{center}}
 
 \begin{document}
 \setlength{\parskip}{2pt}
 \makecvheader[C]
 
-\cvsection{Profile}
+\cvsection{Profil}
 
 \begin{cvparagraph}
-Computer Science graduate and master's student in Cybersecurity. Over two years of manual QA experience at Sperasoft and at least one year of commercial web development for Gwiazdy Katowice DESW (Next.js website, React/Supabase member portal in development). Personal projects in Python computer vision and cross-platform Flutter apps. I work daily with AI coding agents and local LLMs.
+Absolwent informatyki i student studiów magisterskich ze specjalizacją cyberbezpieczeństwo. Ponad dwa lata jako tester oprogramowania w Sperasoft: testy funkcjonalne, wydajnościowe, regresyjne i penetracyjne oraz analiza i dokumentacja defektów. Od ponad roku komercyjnie tworzę oprogramowanie dla stowarzyszenia (Next.js, React, Supabase, PostgreSQL); projekty własne w Pythonie i Flutterze. Na co dzień pracuję z agentami AI i lokalnymi modelami LLM.
 \end{cvparagraph}
 
-\cvsection{Skills}
+\cvsection{Umiejętności}
 
 \begin{cvskills}
-  \cvskill{Web}{React, TypeScript, JavaScript, Next.js, Vite, Tailwind CSS, REST APIs}
-  \cvskill{Backend and data}{SQL, PostgreSQL, Supabase (Auth, RLS/RPC, Edge Functions), Firebase, Cloud Firestore}
-  \cvskill{Languages}{Python, Dart/Flutter, C\#/.NET, Java}
-  \cvskill{AI and ML}{PyTorch, OpenCV, MediaPipe, pandas, NumPy, Hugging Face; local LLMs and fine-tuning, AI coding agents}
-  \cvskill{Tools and DevOps}{Git, Docker, GitHub Actions (CI/CD), Cloudflare, Linux, Windows}
-  \cvskill{Quality and security}{Functional and regression testing, defect analysis, penetration testing, Jira, JQL}
+  \cvskill{QA}{Testy funkcjonalne, wydajnościowe i regresyjne, przypadki testowe, analiza defektów i logów, Jira, JQL}
+  \cvskill{Programowanie}{Python, TypeScript, JavaScript, C, C++, C\#/.NET, Java, Dart, SQL}
+  \cvskill{Web i backend}{React, Next.js, Node.js, REST API, Supabase, PostgreSQL, Firebase, Flutter}
+  \cvskill{AI i dane}{PyTorch, OpenCV, MediaPipe, pandas, NumPy; lokalne LLM, fine-tuning, RAG, agenci AI}
+  \cvskill{Infrastruktura}{Git, Docker, GitHub Actions (CI/CD), Cloudflare, Linux, Windows Server; TCP/IP, DNS, HTTP}
 \end{cvskills}
 
-\cvsection{Experience}
+\cvsection{Doświadczenie}
 
 \begin{cvparagraph}
 \noindent\begin{minipage}[t]{\dimexpr\linewidth-4.8cm\relax}\vspace{0pt}
-\textbf{Sperasoft} - Software Tester. Defect analysis and documentation; investigation of their causes through logical reasoning and analysis of application behaviour.
+\textbf{Sperasoft} - Tester oprogramowania. Analiza i dokumentacja defektów. Szukanie ich źródeł poprzez logiczne myślenie i analizę zachowania aplikacji.
 \end{minipage}\hfill
 \begin{minipage}[t]{4.5cm}\vspace{0pt}
 \raggedleft\entrylocationstyle{Katowice}\\
-\entrydatestyle{June 2024 - September 2026}
+\entrydatestyle{czerwiec 2024 - wrzesień 2026}
 \end{minipage}
 \begin{itemize}[leftmargin=2ex,nosep,topsep=1mm,label=\textbullet]
-  \item Functional and regression testing of AAA games, fix verification, defect reporting and tracking in Jira.
-  \item Penetration testing; technical communication between QA, developers and project management.
+  \item Testy funkcjonalne, wydajnościowe i regresyjne aplikacji o skali enterprise. Weryfikacja poprawek.
+  \item Testy penetracyjne; wykonywanie planów testowych.
+  \item Zgłaszanie i śledzenie błędów w Jira; komunikacja techniczna między QA, deweloperami i kierownictwem projektu.
 \end{itemize}
-\vspace{1mm}
+\vspace{2mm}
 \noindent\begin{minipage}[t]{\dimexpr\linewidth-4.8cm\relax}\vspace{0pt}
-\textbf{Gwiazdy Katowice DESW} - Association President. Website and software development for the association; coordination of club activities, instructor work and communication with external organisations.
+\textbf{Gwiazdy Katowice DESW} - Prezes stowarzyszenia. Tworzenie strony internetowej i oprogramowania dla stowarzyszenia. Koordynacja działalności klubu i pracy instruktorów.
 \end{minipage}\hfill
 \begin{minipage}[t]{4.5cm}\vspace{0pt}
 \raggedleft\entrylocationstyle{Katowice}\\
-\entrydatestyle{2025 - present}
+\entrydatestyle{2025 - obecnie}
 \end{minipage}
 \begin{itemize}[leftmargin=2ex,nosep,topsep=1mm,label=\textbullet]
-  \item Development of the club website and member application (React, Supabase).
-  \item Annual training planning, taking travel, instructor availability and club needs into account.
-  \item Organisation of a fencing event under the patronage of TAURON Park Śląski, with participants from across Poland.
+  \item Strona klubu (Next.js) i aplikacja dla członków (React, Supabase); automatyzacje miesięcznych podsumowań.
+  \item Nadzór nad rozliczeniami finansowymi i dokumentacją statutową; komunikacja z instytucjami i samorządem.
+  \item Organizacja wydarzenia szermierczego pod patronatem TAURON Parku Śląskiego, z uczestnikami z całej Polski.
 \end{itemize}
 \end{cvparagraph}
 
-\cvsection{Projects}
+\cvsection{Projekty}
 
 \begin{cventries}
   \cventry
-    {Next.js, React, TypeScript, Vite, Supabase, PostgreSQL; source code not public}
-    {Gwiazdy Katowice - website and member portal}
+    {Next.js, React, TypeScript, Vite, Supabase, PostgreSQL}
+    {Gwiazdy Katowice - strona i portal stowarzyszenia}
     {\href{https://www.gwiazdykatowice.pl/pl}{\fontsize{8pt}{1em}\selectfont gwiazdykatowice.pl}}
     {}
     {\begin{cvitems}
-      \item {Polish/English website built with Next.js, React, TypeScript and Tailwind CSS.}
-      \item {Asynchronous contact form and server-side REST integrations with Discord and Supabase.}
-      \item {Member portal with Google sign-in, PostgreSQL RLS/RPC and TypeScript Edge Functions; in development.}
+      \item {Strona PL/EN z formularzem kontaktowym i integracjami REST po stronie serwera (Discord, Supabase).}
+      \item {Portal członków: logowanie Google, PostgreSQL z kontrolą dostępu RLS/RPC, Edge Functions; w trakcie rozwoju.}
     \end{cvitems}}
-  \vspace{6mm}
+  \vspace{5mm}
   \cventry
-    {Dart, Flutter, Firebase Auth, Cloud Firestore, Provider}
-    {HemaRef - HEMA tournament application}
+    {Dart, Flutter, Firebase Auth, Cloud Firestore}
+    {HemaRef - aplikacja sędziowska HEMA}
     {\href{https://github.com/kleszczuch/HemaRef}{\fontsize{8pt}{1em}\selectfont github.com/kleszczuch/HemaRef}}
     {}
     {\begin{cvitems}
-      \item {Cross-platform app built as a bachelor's thesis: match scoring, cards and penalties, timer, undo.}
-      \item {Knockout bracket generation for any number of participants, byes and a third-place match.}
-      \item {Google sign-in through Firebase Auth; tournament data stored in Cloud Firestore.}
+      \item {Wieloplatformowa aplikacja turniejowa (praca licencjacka): drabinka pucharowa, punktacja, kartki i kary, timer, cofanie akcji.}
     \end{cvitems}}
-  \vspace{6mm}
+  \vspace{5mm}
   \cventry
     {Python, OpenCV, MediaPipe Hands, PyTorch}
-    {MouseNoNeed - gesture-controlled mouse}
+    {MouseNoNeed - sterowanie gestami}
     {\href{https://github.com/kleszczuch/MouseNoNeed}{\fontsize{8pt}{1em}\selectfont github.com/kleszczuch/MouseNoNeed}}
     {}
     {\begin{cvitems}
-      \item {Desktop app controlling the mouse and keyboard with hand gestures tracked in real time from a webcam.}
-      \item {GUI for mapping gestures to cursor movement, clicks, scrolling and keyboard shortcuts.}
+      \item {Sterowanie myszą i klawiaturą gestami dłoni śledzonymi z kamery w czasie rzeczywistym; GUI do mapowania gestów.}
     \end{cvitems}}
 \end{cventries}
 
-\vspace{6mm}
-\cvsection{Education}
+\vspace{2mm}
+\cvsection{Wykształcenie}
 
 \begin{cventries}
   \cventry
-    {Master's studies in Computer Science - Cybersecurity}
-    {WSB University in Katowice}
+    {Studia magisterskie - informatyka, cyberbezpieczeństwo}
+    {Uniwersytet WSB w Katowicach}
     {Katowice}
-    {October 2026 - present}
-    {Studies in progress.}
+    {październik 2026 - obecnie}
+    {Studia w trakcie.}
   \vspace{2mm}
   \cventry
-    {Bachelor's degree in Computer Science}
-    {University of Economics in Katowice}
+    {Licencjat - informatyka}
+    {Uniwersytet Ekonomiczny w Katowicach}
     {Katowice}
     {2023 - 2026}
-    {Specialisation: Algorithms and Programming. Thesis: HEMA tournament application built with Flutter and Firebase.}
+    {Specjalizacja: Algorytmy i programowanie. Praca licencjacka: aplikacja sędziowska HEMA we Flutterze i Firebase.}
 \end{cventries}
 
-\cvsection{Languages}
+\cvsection{Języki}
 
 \begin{cvparagraph}
-\textbf{Polish} - native \qquad \textbf{English} - C1 \qquad \textbf{German} - B1/B2 \qquad \textbf{Italian} - A1/A2
+\textbf{Polski} - ojczysty \qquad \textbf{Angielski} - C1 \qquad \textbf{Niemiecki} - B1/B2 \qquad \textbf{Włoski} - A1/A2
 \end{cvparagraph}
 
 \vspace{2mm}
 {\fontsize{8pt}{9pt}\selectfont\color{graytext}
-\noindent I consent to the processing of the personal data contained in my CV for the purposes of the recruitment process I am applying for.\par}
+\noindent Wyrażam zgodę na przetwarzanie moich danych osobowych zawartych w CV na potrzeby bieżącego procesu rekrutacji, zgodnie z Rozporządzeniem Parlamentu Europejskiego i Rady (UE) 2016/679 (RODO).\par}
 \end{document}
