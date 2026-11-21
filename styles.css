@@ -4,8 +4,9 @@
   --text: #18181b;
   --muted: #5f6068;
   --border: #e4e4e7;
-  --accent: #e5484d;
-  --accent-soft: #fdecec;
+  --accent: #0e7490;
+  --accent-soft: #e0f7fa;
+  --on-accent: #ffffff;
   --radius: 14px;
   --shadow: 0 1px 2px rgb(0 0 0 / .04), 0 4px 16px rgb(0 0 0 / .04);
 }
@@ -16,8 +17,9 @@
     --text: #ececef;
     --muted: #a0a0ab;
     --border: #2a2a30;
-    --accent: #ff6369;
-    --accent-soft: #3a1b1d;
+    --accent: #22d3ee;
+    --accent-soft: #0e2a30;
+    --on-accent: #0f0f11;
     --shadow: none;
   }
 }
@@ -90,7 +92,7 @@ main { max-width: 1000px; margin: 0 auto; padding: 40px 16px 64px; }
   transition: transform .15s, border-color .15s;
 }
 .btn:hover { transform: translateY(-1px); border-color: var(--accent); }
-.btn.primary { background: var(--accent); border-color: var(--accent); color: #fff; }
+.btn.primary { background: var(--accent); border-color: var(--accent); color: var(--on-accent); }
 
 /* ---------- CV ---------- */
 .cv { display: grid; gap: 16px; }
